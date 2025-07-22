@@ -1,5 +1,5 @@
 // Import crypto polyfill first to fix Node v16 compatibility
-import './crypto-polyfill.js'
+require('./crypto-polyfill.js')
 
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'

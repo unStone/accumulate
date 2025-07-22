@@ -27,5 +27,12 @@ export default tseslint.config(
       ...eslintPluginReactRefresh.configs.vite.rules
     }
   },
+  {
+    files: ['src/main/**/*.{ts,js}', 'src/preload/**/*.{ts,js}'],
+    rules: {
+      '@typescript-eslint/no-var-requires': 'off',
+      '@typescript-eslint/no-require-imports': 'off'
+    }
+  },
   eslintConfigPrettier
 )
