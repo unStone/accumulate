@@ -1,3 +1,4 @@
+import './crypto-polyfill'
 import './assets/main.css'
 
 import { StrictMode } from 'react'
